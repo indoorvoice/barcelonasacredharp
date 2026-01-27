@@ -1,201 +1,143 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Sacred Harp Barcelona</title>
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&display=swap"
-			rel="stylesheet"
-		/>
-		<style>
-			* {
-				box-sizing: border-box;
-			}
 
-			html {
-				font-size: 18px;
-			}
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Sacred Harp Barcelona</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;600&display=swap" rel="stylesheet" />
+	<style>
+		* {
+			box-sizing: border-box;
+		}
 
-			body {
-				font-family: "Cormorant Garamond", Georgia, serif;
-				line-height: 1.8;
-				color: #e8e0d5;
-				background: #243530;
-				/* padding: 1rem 1rem; */
-				max-width: 580px;
-				margin: 0 auto;
-				min-height: 100vh;
-				letter-spacing: 0.01em;
-			}
+		html {
+			font-size: 18px;
+		}
 
-			header {
-				margin-bottom: 1.5rem;
-				text-align: center;
-			}
+		body {
+			font-family: "Cormorant Garamond", Georgia, serif;
+			line-height: 1.8;
+			color: #e8e0d5;
+			background: #243530;
+			max-width: 580px;
+			margin: 0 auto;
+			min-height: 100vh;
+			letter-spacing: 0.01em;
+		}
 
-			h1 {
-				font-family: "EB Garamond", Georgia, serif;
-				font-size: 2.6rem;
-				font-weight: 500;
-				line-height: 1.1;
-				/* letter-spacing: 0.08em; */
-				text-transform: uppercase;
-				margin-bottom: 0.5rem;
-				margin-top: 0.5rem;
-				color: #f4b87a;
-			}
+		header {
+			margin-bottom: 1.5rem;
+			text-align: center;
+		}
 
-			.subtitle {
-				font-style: italic;
-				font-size: 1.1rem;
-				opacity: 0.7;
-				letter-spacing: 0.08em;
-			}
+		h1 {
+			font-family: "EB Garamond", Georgia, serif;
+			font-size: 2.6rem;
+			font-weight: 500;
+			line-height: 1.1;
+			text-transform: uppercase;
+			margin-bottom: 0.5rem;
+			margin-top: 0.5rem;
+			color: #f4b87a;
+		}
 
-			section {
-				margin-bottom: 2rem;
-			}
+		section {
+			margin-bottom: 2rem;
+		}
 
-			section:last-of-type {
-				margin-bottom: 0;
-			}
+		section:last-of-type {
+			margin-bottom: 0;
+		}
 
-			h2 {
-				font-size: 0.9rem; /* bumped up from 0.85rem */
-				font-weight: 600;
-				letter-spacing: 0.15em;
-				text-transform: uppercase;
-				color: #f4b87a; /* warm amber accent */
-			}
+		h2 {
+			font-size: 0.9rem;
+			font-weight: 600;
+			letter-spacing: 0.15em;
+			text-transform: uppercase;
+			color: #f4b87a;
+		}
 
-			p {
-				font-size: 1.15rem;
-				margin-bottom: 0.5rem;
-				margin-top: 0rem;
-			}
+		p {
+			font-size: 1.15rem;
+			margin-bottom: 0.5rem;
+			margin-top: 0rem;
+		}
 
-			p:last-child {
-				margin-bottom: 0;
-			}
+		p:last-child {
+			margin-bottom: 0;
+		}
 
-			.details {
-				font-size: 1.3rem;
-				line-height: 2.2;
-			}
+		a {
+			color: #f4ece3;
+			text-decoration: none;
+			border-bottom: 1px solid rgba(244, 236, 227, 0.25);
+			transition: border-color 0.3s ease;
+		}
 
-			a {
-				color: #f4ece3;
-				text-decoration: none;
-				border-bottom: 1px solid rgba(244, 236, 227, 0.25);
-				transition: border-color 0.3s ease;
-			}
+		a:hover {
+			border-color: rgba(244, 236, 227, 0.8);
+		}
 
-			a:hover {
-				border-color: rgba(244, 236, 227, 0.8);
-			}
+		#section-after-logo {
+			margin-top: -1rem;
+			position: relative;
+			padding: 0 1rem;
+		}
 
-			.listen {
-				text-align: center;
-				padding: 0.5rem 0;
-				border-top: 1px solid rgba(244, 236, 227, 0.1);
-				border-bottom: 1px solid rgba(244, 236, 227, 0.1);
-			}
+		.overflow-centered {
+			display: block;
+			position: relative;
+			margin-top: -1.5rem;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 100%;
+			max-width: none;
+			height: auto;
+		}
+	</style>
+</head>
 
-			.listen a {
-				font-size: 1.1rem;
-				letter-spacing: 0.15em;
-				text-transform: uppercase;
-				border-bottom: none;
-				opacity: 0.7;
-				transition: opacity 0.3s ease;
-			}
+<body>
+	<header>
+		<h1>Sacred Harp Barcelona</h1>
+	</header>
 
-			.listen a:hover {
-				opacity: 1;
-			}
+	<img src="JUSTBIRDCAUSEYOUHATEMYTYPETASTE.png" class="overflow-centered" />
 
-			footer {
-				text-align: center;
-				font-size: 0.9rem;
-				opacity: 0.4;
-				margin-top: 5rem;
-			}
+	<section id="section-after-logo">
+		<h2>What it is</h2>
+		<p>Community folk-singing of traditional music.</p>
+		<ul>
+			<li>No auditions, rehearsals or performances.</li>
+			<li>No money or experience needed.</li>
+			<li>Friendly, inclusive community open to all.</li>
+		</ul>
+		<p>We show up, we sing, we hang out. That's it.</p>
 
-			#section-after-logo {
-				margin-top: -1rem;
-				position: relative;
-				padding: 0 1rem;
-			}
-
-			.overflow-centered {
-				display: block;
-				position: relative;
-				margin-top: -1.5rem;
-				left: 50%;
-				transform: translateX(-50%);
-				width: 100%;
-				max-width: none;
-				height: auto;
-			}
-		</style>
-	</head>
-	<body>
-		<header>
-			<h1>Sacred Harp Barcelona</h1>
-		</header>
-
-		<img
-			src="JUSTBIRDCAUSEYOUHATEMYTYPETASTE.png"
-			class="overflow-centered"
-		/>
-
-		<section id="section-after-logo">
-			<h2>What it is</h2>
-			<p>Community folk-singing of traditional acapella music.</p>
+		<section>
+			<h2>When &amp; Where</h2>
+			<p>
+				<a href="https://maps.app.goo.gl/h1JWXzK7eTSFmJ9F9">Thursdays, 7 - 9, MOB, Bailèn</a>
+			</p>
 			<ul>
-				<li>No auditions, rehearsals or performances.</li>
-				<li>No money or experience needed.</li>
-				<li>Friendly, inclusive community open to all.</li>
+				<li>We meet in Bar Bailén at 7 and sing downstairs.
+				</li>
+				<li>Contact us here if you have any questions!</li>
+				<li>If you arrive late, contact us to let us know!</li>
 			</ul>
-			<p>We show up, we sing, we hang out. That's all.</p>
-
-			<section>
-				<h2>When &amp; Where</h2>
-				<p>
-					<a href="https://maps.app.goo.gl/h1JWXzK7eTSFmJ9F9"
-						>Thursdays, 7 - 9, MOB, Bailèn</a
-					>
-				</p>
-			</section>
-
-			<section>
-				<h2>What it sounds like</h2>
-				<iframe
-					style="border: 0; width: 100%; height: 42px;"
-					src="https://bandcamp.com/EmbeddedPlayer/album=2865413260/size=small/bgcol=333333/linkcol=ffffff/track=2370696986/transparent=true/"
-					seamless
-					><a
-					href="https://corksacredharp.bandcamp.com/album/the-third-ireland-convention-2013-saturday"
-					/></iframe
-				>
-
-				<section>
-					<h2>What to bring</h2>
-					<p>Nothing. We've got things to sing from, it's fine.</p>
-				</section>
-
-				<!-- <section>
-				<h2>Get in touch</h2>
-				<p>
-					Questions? Email <a href="mailto:hello@example.com"
-						>hello@example.com</a
-					>
-				</p>
-			</section> -->
-			</section>
 		</section>
-	</body>
+
+		<section>
+			<h2>What it sounds like</h2>
+			<iframe style="border: 0; width: 100%; height: 42px;"
+				src="https://bandcamp.com/EmbeddedPlayer/album=2865413260/size=small/bgcol=333333/linkcol=ffffff/track=2370696986/transparent=true/"
+				seamless><a
+					href="https://corksacredharp.bandcamp.com/album/the-third-ireland-convention-2013-saturday" /></iframe>
+		</section>
+	</section>
+</body>
+
 </html>
